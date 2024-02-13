@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: url('img.webp') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 100%;
+    background: transparent;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-right: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    padding: 6px 14px;
+    transition: .5s;
+}
+
+.sidebar.active {
+    width: 260px;
+}
+
+.sidebar .logo-menu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+}
+
+.sidebar .logo-menu .logo {
+    font-size: 25px;
+    color: #fff;
+    pointer-events: none;
+    opacity: 0;
+    transition: .2s;
+}
+
+.sidebar.active .logo-menu .logo {
+    opacity: 1;
+    transition-delay: .1s;
+}
+
+.sidebar .logo-menu .toggle-btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.sidebar.active .logo-menu .toggle-btn {
+    left: 90%;
+}
+
+.sidebar .list {
+    margin-top: 10px;
+}
+
+.list .list-item {
+    list-style: none;
+    width: 100%;
+    height: 50px;
+    margin: 5px 0;
+    line-height: 50px;
+}
+
+.list .list-item a {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    white-space: nowrap;
+    transition: .5s;
+}
+
+.list .list-item.active a,
+.list .list-item a:hover {
+    background: rgba(255, 255, 255, .2);
+}
+
+.list .list-item a i {
+    min-width: 60px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.sidebar .link-name {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s;
+}
+
+.sidebar.active .link-name {
+    opacity: 1;
+    pointer-events: auto;
+    transition-delay: calc(.1s * var(--i));
+}
+
+
+
+
+
+
+
+.container {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+    -webkit-backdrop-filter: blur(200px);
+    backdrop-filter: blur(200px);
+}
+  
+.carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; 
+    transition: transform 0.6s ease-in-out;
+}
+
+.carousel__face { 
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+    display: flex;
+}
+  
+.carousel-text {
+    margin: auto;
+    font-size: 25px;
+    color: rgba(255, 255, 255, .6);
+}
+  
+  
+.carousel__face:nth-child(1) {
+    border: 1px solid #000;
+    border-radius:20px;
+    background-image: url("https://www.melty.fr/wp-content/uploads/meltyfr/2022/02/media-61708.jpg");
+    transform: rotateY(  0deg) translateZ(580px); }
+.carousel__face:nth-child(2) { 
+    border: 1px solid #000;
+    border-radius:20px;
+    background-image: url("https://www.tomsguide.fr/content/uploads/sites/2/2019/10/thanos-retour-marvel-phase-5.jpg");
+      transform: rotateY(30deg) translateZ(580px); }
+.carousel__face:nth-child(3) {
+    border: 1px solid #000;
+    border-radius:20px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQesAuw3wg8PtA6V8dA_yK_FPKi-kSorSmIDN-odw_8fRe3yMeZXs7534h_g0TTABb9UGo&usqp=CAU");
+    transform: rotateY(60deg) translateZ(580px); }
+.carousel__face:nth-child(4) {
+    border: 1px solid #000;
+    border-radius:20px;
+    background-image: url("https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/04/hela-necroswords.jpg");
+    transform: rotateY(90deg) translateZ(580px); }
+.carousel__face:nth-child(5) { 
+    border: 1px solid #000;
+    border-radius:20px;
+    background-image: url("https://hips.hearstapps.com/hmg-prod/images/killmonger-1659022582.png");
+   transform: rotateY(120deg) translateZ(580px); }
+.carousel__face:nth-child(6) { 
+    border: 1px solid #000;
+    border-radius:20px;
+    background-image: url("https://i0.wp.com/www.murphysmultiverse.com/wp-content/uploads/2022/12/scarletwitchdead.jpg?fit=1024%2C576&ssl=1");
+   transform: rotateY(150deg) translateZ(580px); }
+.carousel__face:nth-child(7) { 
+    border: 1px solid #000;
+    border-radius:20px;
+    background-image: url("https://www.fulguropop.com/wp-content/uploads/2019/10/ego.jpg");
+   transform: rotateY(180deg) translateZ(580px); }
+.carousel__face:nth-child(8) {
+    border: 1px solid #000;
+    border-radius:20px;
+    background-image: url("https://www.ecranlarge.com/media/cache/1600x1200/uploads/articles/000/000/000/spider-man-homecoming-photo-michael-keaton-981893-large.jpg");
+    transform: rotateY(210deg) translateZ(580px); }
+.carousel__face:nth-child(9) {
+    border: 1px solid #000;
+    border-radius:20px;
+    background-image: url("https://media.topito.com/wp-content/uploads/2023/04/XuWenwu.jpeg");
+    transform: rotateY(240deg) translateZ(580px); }
+.carousel__face:nth-child(10) {
+    border: 1px solid #000;
+    border-radius:20px;
+    background-image: url("https://fr.web.img6.acsta.net/newsv7/21/04/19/12/08/4140457.jpg");
+    transform: rotateY(270deg) translateZ(580px); }
+.carousel__face:nth-child(11) {
+    border: 1px solid #000;
+    border-radius:20px;
+    background-image: url("https://diveng.rosselcdn.net/sites/default/files/dpistyles/ena_16_9_extra_big/node_1702/5023/public/thumbnails/image/capture_decran_2023-03-19_a_11.29.45.png?itok=I9h_mOKo1679221902");
+    transform: rotateY(300deg) translateZ(580px); }
+.carousel__face:nth-child(12) {
+    border: 1px solid #000;
+    border-radius:20px;
+    background-image: url("https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/05/did-nazi-it-10-facts-about-the-red-skull-the-mcu-never-explored-feature-image.jpg");
+    transform: rotateY(330deg) translateZ(580px); }
+  
+  
+  
+@keyframes rotate360 {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+}
+  
+#prev, #next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: 180px;
+    padding: 16px;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    transition: 0.6s ease;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+#prev {
+    background-color: rgba(255, 255, 255, .1);
+    width: 18vw;
+    height: 43vh;
+    margin-top: 5vh;
+    left: -550px;
+    border-radius: 3px 0 0 3px;
+}
+  
+#next {
+    background-color: rgba(255, 255, 255, .1);
+    width: 18vw;
+    height: 43vh;
+    margin-top: 5vh;
+    right: -550px;
+    border-radius: 0 3px 3px 0;
+}
