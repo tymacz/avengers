@@ -123,146 +123,160 @@ body {
 
 
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1390px;
+    margin-left: auto;
+    padding: 20px;
+}
 
 .container {
-    position: relative;
-    width: 320px;
-    margin: 100px auto 0 auto;
-    perspective: 1000px;
-    -webkit-backdrop-filter: blur(200px);
-    backdrop-filter: blur(200px);
-}
-  
-.carousel {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d; 
-    transition: transform 0.6s ease-in-out;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 10px 0;
 }
 
-.carousel__face { 
-    position: absolute;
-    width: 300px;
-    height: 187px;
-    top: 20px;
-    left: 10px;
-    right: 10px;
+.card {
+    position: relative;
+    width: 80px;
+    border-radius: .75rem;
     background-size: cover;
-    box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
-    display: flex;
-}
-  
-.carousel-text {
-    margin: auto;
-    font-size: 25px;
-    color: rgba(255, 255, 255, .6);
-}
-  
-  
-.carousel__face:nth-child(1) {
-    border: 1px solid #000;
-    border-radius:20px;
-    background-image: url("https://www.melty.fr/wp-content/uploads/meltyfr/2022/02/media-61708.jpg");
-    transform: rotateY(  0deg) translateZ(580px); }
-.carousel__face:nth-child(2) { 
-    border: 1px solid #000;
-    border-radius:20px;
-    background-image: url("https://www.tomsguide.fr/content/uploads/sites/2/2019/10/thanos-retour-marvel-phase-5.jpg");
-      transform: rotateY(30deg) translateZ(580px); }
-.carousel__face:nth-child(3) {
-    border: 1px solid #000;
-    border-radius:20px;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQesAuw3wg8PtA6V8dA_yK_FPKi-kSorSmIDN-odw_8fRe3yMeZXs7534h_g0TTABb9UGo&usqp=CAU");
-    transform: rotateY(60deg) translateZ(580px); }
-.carousel__face:nth-child(4) {
-    border: 1px solid #000;
-    border-radius:20px;
-    background-image: url("https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/04/hela-necroswords.jpg");
-    transform: rotateY(90deg) translateZ(580px); }
-.carousel__face:nth-child(5) { 
-    border: 1px solid #000;
-    border-radius:20px;
-    background-image: url("https://hips.hearstapps.com/hmg-prod/images/killmonger-1659022582.png");
-   transform: rotateY(120deg) translateZ(580px); }
-.carousel__face:nth-child(6) { 
-    border: 1px solid #000;
-    border-radius:20px;
-    background-image: url("https://i0.wp.com/www.murphysmultiverse.com/wp-content/uploads/2022/12/scarletwitchdead.jpg?fit=1024%2C576&ssl=1");
-   transform: rotateY(150deg) translateZ(580px); }
-.carousel__face:nth-child(7) { 
-    border: 1px solid #000;
-    border-radius:20px;
-    background-image: url("https://www.fulguropop.com/wp-content/uploads/2019/10/ego.jpg");
-   transform: rotateY(180deg) translateZ(580px); }
-.carousel__face:nth-child(8) {
-    border: 1px solid #000;
-    border-radius:20px;
-    background-image: url("https://www.ecranlarge.com/media/cache/1600x1200/uploads/articles/000/000/000/spider-man-homecoming-photo-michael-keaton-981893-large.jpg");
-    transform: rotateY(210deg) translateZ(580px); }
-.carousel__face:nth-child(9) {
-    border: 1px solid #000;
-    border-radius:20px;
-    background-image: url("https://media.topito.com/wp-content/uploads/2023/04/XuWenwu.jpeg");
-    transform: rotateY(240deg) translateZ(580px); }
-.carousel__face:nth-child(10) {
-    border: 1px solid #000;
-    border-radius:20px;
-    background-image: url("https://fr.web.img6.acsta.net/newsv7/21/04/19/12/08/4140457.jpg");
-    transform: rotateY(270deg) translateZ(580px); }
-.carousel__face:nth-child(11) {
-    border: 1px solid #000;
-    border-radius:20px;
-    background-image: url("https://diveng.rosselcdn.net/sites/default/files/dpistyles/ena_16_9_extra_big/node_1702/5023/public/thumbnails/image/capture_decran_2023-03-19_a_11.29.45.png?itok=I9h_mOKo1679221902");
-    transform: rotateY(300deg) translateZ(580px); }
-.carousel__face:nth-child(12) {
-    border: 1px solid #000;
-    border-radius:20px;
-    background-image: url("https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/05/did-nazi-it-10-facts-about-the-red-skull-the-mcu-never-explored-feature-image.jpg");
-    transform: rotateY(330deg) translateZ(580px); }
-  
-  
-  
-@keyframes rotate360 {
-    from {
-      transform: rotateY(0deg);
-    }
-    to {
-      transform: rotateY(-360deg);
-    }
-}
-  
-#prev, #next {
     cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: 180px;
-    padding: 16px;
-    background: transparent;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 20px;
+    display: flex;
+    align-items: flex-end;
+    transition: .4s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card > .row {
     color: white;
-    font-weight: bold;
-    font-size: 80px;
-    transition: 0.6s ease;
-    border: none;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+    display: flex;
+    flex-wrap: nowrap;
 }
-  
-#prev {
-    background-color: rgba(255, 255, 255, .1);
-    width: 18vw;
-    height: 43vh;
-    margin-top: 5vh;
-    left: -550px;
-    border-radius: 3px 0 0 3px;
+
+.card > .row > .icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
 }
-  
-#next {
-    background-color: rgba(255, 255, 255, .1);
-    width: 18vw;
-    height: 43vh;
-    margin-top: 5vh;
-    right: -550px;
-    border-radius: 0 3px 3px 0;
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description p {
+    color: #b0b0ba;
+    padding-top: 5px;
+}
+
+.description h4 {
+    text-transform: uppercase;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.vertical-text {
+    padding: 5px;
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: center; 
+    color: #fff;
+    line-height: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 22px;
+}
+
+.vertical-text-black {
+    padding: 5px;
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: center; 
+    color: #000;
+    line-height: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 22px;
+}
+
+.vertical-text span {
+    display: block; 
+    width: 20px; 
+    margin: auto; 
+}
+.vertical-text-black span {
+    display: block; 
+    width: 20px; 
+    margin: auto; 
+}
+
+input:checked + label .vertical-text {
+    opacity: 0; 
+}
+input:checked + label .vertical-text-black {
+    opacity: 0; 
+}
+
+
+
+.card[for="c1"] {
+    background-image: url('https://wallpapers.com/images/hd/marvel-villain-thanos-qw0tzjg9vqkn0ju7.jpg');
+}
+.card[for="c2"] {
+    background-image: url('https://wallpapercosmos.com/w/full/6/2/e/14333-3840x2160-desktop-4k-loki-tv-series-wallpaper.jpg');
+}
+.card[for="c3"] {
+    background-image: url('https://imgsrc.cineserie.com/2021/02/spider-man-3-willem-dafoe-de-retour-en-bouffon-vert.png?ver=1');
+}
+.card[for="c4"] {
+    background-image: url('https://www.bhmpics.com/downloads/killmonger-Wallpapers/15.killmonger-black-panther-wakanda-forever-6h.jpg');
+}
+.card[for="c5"] {
+    background-image: url('https://w.forfun.com/fetch/ef/ef6f516f32c68487c8e6e282a7ddeb9e.jpeg');
+}
+.card[for="c4"] {
+    background-image: url('https://www.bhmpics.com/downloads/killmonger-Wallpapers/15.killmonger-black-panther-wakanda-forever-6h.jpg');
+}
+.card[for="c4"] {
+    background-image: url('https://www.bhmpics.com/downloads/killmonger-Wallpapers/15.killmonger-black-panther-wakanda-forever-6h.jpg');
+}
+.card[for="c4"] {
+    background-image: url('https://www.bhmpics.com/downloads/killmonger-Wallpapers/15.killmonger-black-panther-wakanda-forever-6h.jpg');
 }
