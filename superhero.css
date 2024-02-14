@@ -205,3 +205,20 @@ body {
     color: white;
     margin-top: 5vh;
 }
+
+.carousel-options i {
+    color: white;
+    min-width: 60px;
+    height: fit-content;
+    font-size: 5vh;
+}
+
+#next {
+    position: absolute;
+    top: 7vh;
+}
+
+#prev {
+    position:absolute;
+    bottom: 7vh;
+}
