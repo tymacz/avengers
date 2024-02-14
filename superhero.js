@@ -12,18 +12,22 @@ function rotateCarousel() {
   var angle = theta * selectedIndex * -1;
   carousel.style.transform = 'translateZ(' + -radius + 'px) ' + 
     rotateFn + '(' + angle + 'deg)';
+    console.log(selectedIndex%20);
+
 }
 
 
 var prevButton = document.querySelector('.previous-button');
 prevButton.addEventListener( 'click', function() {
   selectedIndex--;
+  changeCarousel();
   rotateCarousel();
 });
 
 var nextButton = document.querySelector('.next-button');
 nextButton.addEventListener( 'click', function() {
   selectedIndex++;
+  changeCarousel();
   rotateCarousel();
 });
 
@@ -31,9 +35,15 @@ function changeCarousel() {
   cellCount = 20;
   theta = 360 / cellCount;
   var cellSize = cellWidth
-  radius = Math.round( ( cellSize / 2) / Math.tan( Math.PI / cellCount ) );
+  radius = Math.round( ( cellSize / 3) / Math.tan( Math.PI / cellCount ) );
   for ( var i=0; i < cells.length; i++ ) {
     var cell = cells[i];
+    console.log("bip" + i)
+    if ( i == selectedIndex % cells.length ) {
+      cells[i].style.display = "flex";
+    }else{
+      cells[i].style.display = "none";
+    }
     if (i < 20) {
       // visible cell
       cell.style.opacity = 1;
