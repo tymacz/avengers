@@ -10,6 +10,7 @@
 body {
     min-height: 100vh;
     background: url('img.webp') no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
 }
@@ -27,6 +28,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     padding: 6px 14px;
     transition: .5s;
+    z-index: 99;
 }
 
 .sidebar.active {
@@ -117,3 +119,44 @@ body {
     pointer-events: auto;
     transition-delay: calc(.1s * var(--i));
 }
+
+#container{
+    color: white;
+    width: 80vw;
+    height: 90vh;
+    margin-top: 5vh;
+    margin-left: 10vw;
+    z-index: -1;
+
+}
+
+#container h1{
+    margin-left: 5vw;
+    margin-top: 5vh;
+}
+
+#grid{
+    display: grid;
+    margin-top:5vh;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;}
+
+#content{
+    width: 25vw;
+    height: 25vh;
+    background: transparent;
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-right: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+#content h2{
+    margin-left: 1vw;
+    margin-top: 1vh;
+}
+
