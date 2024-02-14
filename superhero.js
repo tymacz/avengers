@@ -13,6 +13,7 @@ function rotateCarousel() {
   carousel.style.transform = 'translateZ(' + -radius + 'px) ' + 
     rotateFn + '(' + angle + 'deg)';
     console.log(selectedIndex%20);
+
 }
 
 
@@ -43,8 +44,6 @@ function changeCarousel() {
     }else{
       cells[i].style.display = "none";
     }
-
-
     if (i < 20) {
       // visible cell
       cell.style.opacity = 1;

@@ -144,7 +144,6 @@ body {
   transform: translateZ(-289px);
   transform-style: preserve-3d;
   transition: transform 1s;
-
 }
 
 .carousel__cell {
@@ -205,6 +204,4 @@ body {
 #card > p{
     color: white;
     margin-top: 5vh;
-
-
 }
