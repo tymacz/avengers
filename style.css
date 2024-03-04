@@ -41,11 +41,13 @@ body {
 }
 
 .sidebar .logo-menu .logo {
+    margin: 10px 10px;
     font-size: 25px;
     color: #fff;
     pointer-events: none;
     opacity: 0;
     transition: .2s;
+    width: 60px;
 }
 
 .sidebar.active .logo-menu .logo {

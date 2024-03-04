@@ -84,7 +84,6 @@ body {
     height: 50px;
     margin: 5px 0;
     line-height: 50px;
-    margin-top: 20px;
 }
 
 .list .list-item a {
@@ -142,6 +141,7 @@ body {
     justify-content: center;
     flex-wrap: nowrap;
     margin: 10px 0;
+    margin-left: 28px;
 }
 
 .card {
@@ -257,44 +257,21 @@ input:checked + label .vertical-text-black {
     opacity: 0; 
 }
 
-
-.navigation-buttons .slide-btn {
-    position: absolute;
-    top: 42%;
-    z-index: 10;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    padding: 10px;
-    font-size: 75px;
-    color: #fff;
-}
-
-.navigation-buttons .slide-btn.left {
-    left: 110px;
-
-}
-
-.navigation-buttons .slide-btn.right {
-    right: 20px;
-}
-
-
 .left-blur {
     margin-left: 90px;
     position: absolute;
-    width: 150px;
+    width: 130px;
     height: 100vh;
-    background: linear-gradient(to right, rgba(30, 30, 49, 1), rgba(30, 30, 49, 0));
+    background: linear-gradient(to right, rgb(137, 137, 137), rgba(30, 30, 49, 0));
     z-index: 5;
 }
 
 .right-blur {
-    margin-left: 1320px;
+    margin-left: 1340px;
     position: absolute;
-    width: 150px;
+    width: 130px;
     height: 100vh;
-    background: linear-gradient(to left, rgba(30, 30, 49, 1), rgba(30, 30, 49, 0));
+    background: linear-gradient(to left, rgb(137, 137, 137), rgba(30, 30, 49, 0));
     z-index: 5;
 }
 
