@@ -1,106 +1,114 @@
 package com.java.Avengers.Entities;
 
 import jakarta.persistence.*;
+import org.yaml.snakeyaml.constructor.Constructor;
 
 @Entity
-@Table(name = "super_hero", schema = "avenger")
+@Table(name = "super_hero")
 public class SuperHero {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_hero")
-    private Long id;
+    private int id_hero;
+    private String nom_hero;
+    private String identite_secrete;
+    private String pouvoir;
+    private String point_faible;
+    private int score;
+    private String commentaire;
+    private String numero_tel;
 
-    @Column(name = "nom_hero")
-    private String name;
 
-    @Column(name = "identite_secrete")
-    private String secretIdentity;
-
-    @Column(name = "pouvoir")
-    private String power;
-
-    @Column(name = "point_faible")
-    private String weakness;
-
-    @Column(name = "score")
-    private Integer score;
-
-    @Column(name = "commentaire")
-    private String comment;
-
-    @Column(name = "numero_tel")
-    private String phoneNumber;
 
     @ManyToOne
     @JoinColumn(name = "id_adresse")
     private Address address;
 
-    public SuperHero(String name) {
-        this.name = name;
+    public SuperHero() {
     }
-///////////////////////////////////////////////
-    // Getters and setters
 
-    public Long getId() {
-        return id;
+
+
+    // Constructor with parameters
+    public SuperHero(String nom_hero, String identite_secrete, String pouvoir, String point_faible, int score, String commentaire, String numero_tel, Address address) {
+        this.nom_hero = nom_hero;
+        this.identite_secrete = identite_secrete;
+        this.pouvoir = pouvoir;
+        this.point_faible = point_faible;
+        this.score = score;
+        this.commentaire = commentaire;
+        this.numero_tel = numero_tel;
+        this.address = address;
     }
-    public void setId(Long id) {
-        this.id = id;
+
+    // Getters and setters
+    public int getIdHero() {
+        return id_hero;
     }
-    ///////////////////////////////////////////////
-    public String getName() {
-        return name;
+
+    public void setIdHero(int idHero) {
+        this.id_hero = idHero;
     }
-    public void setName(String name) {
-        this.name = name;
+
+    public String getNomHero() {
+        return nom_hero;
     }
-    ///////////////////////////////////////////////
-    public String getPower() {
-        return power;
+
+    public void setNomHero(String nomHero) {
+        this.nom_hero = nomHero;
     }
-    public void setPower(String power) {
-        this.power = power;
+
+    public String getIdentiteSecrete() {
+        return identite_secrete;
     }
-    ///////////////////////////////////////////////
-    public Integer getScore() {
+
+    public void setIdentiteSecrete(String identiteSecrete) {
+        this.identite_secrete = identiteSecrete;
+    }
+
+    public String getPouvoir() {
+        return pouvoir;
+    }
+
+    public void setPouvoir(String pouvoir) {
+        this.pouvoir = pouvoir;
+    }
+
+    public String getPointFaible() {
+        return point_faible;
+    }
+
+    public void setPointFaible(String pointFaible) {
+        this.point_faible = pointFaible;
+    }
+
+    public int getScore() {
         return score;
     }
-    public void setScore(Integer score) {
+
+    public void setScore(int score) {
         this.score = score;
     }
-    ///////////////////////////////////////////////
-    public String getComment() {
-        return comment;
+
+    public String getCommentaire() {
+        return commentaire;
     }
-    public void setComment(String comment) {
-        this.comment = comment;
+
+    public void setCommentaire(String commentaire) {
+        this.commentaire = commentaire;
     }
-    ///////////////////////////////////////////////
-    public String getPhoneNumber() {
-        return phoneNumber;
+
+    public String getNumeroTel() {
+        return numero_tel;
     }
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+
+    public void setNumeroTel(String numeroTel) {
+        this.numero_tel = numeroTel;
     }
-    ///////////////////////////////////////////////
-    public String getSecretIdentity() {
-        return secretIdentity;
-    }
-    public void setSecretIdentity(String secretIdentity) {
-        this.secretIdentity = secretIdentity;
-    }
-    ///////////////////////////////////////////////
-    public String getWeakness() {
-        return weakness;
-    }
-    public void setWeakness(String weakness) {
-        this.weakness = weakness;
-    }
-    ///////////////////////////////////////////////
+
     public Address getAddress() {
         return address;
     }
+
     public void setAddress(Address address) {
         this.address = address;
     }
