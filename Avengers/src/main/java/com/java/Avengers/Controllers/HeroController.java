@@ -1,29 +1,22 @@
 package com.java.Avengers.Controllers;
 
 import com.java.Avengers.Entities.SuperHero;
-import com.java.Avengers.Repository.HeroRepository;
+import com.java.Avengers.Service.HeroService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+@CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/api/heroes")
+@RequestMapping("/super_hero")
 public class HeroController {
 
-    private final HeroRepository heroRepository;
-
     @Autowired
-    public HeroController(HeroRepository heroRepository) {
-        this.heroRepository = heroRepository;
-    }
+    private HeroService superHeroService;
+
 
     @GetMapping
-    public ResponseEntity<List<SuperHero>> getAllHeroes() {
-        List<SuperHero> heroes = heroRepository.findAll();
-        return ResponseEntity.ok().body(heroes);
+    public List<SuperHero> getAllSuperHeroes() {
+        return superHeroService.getAllSuperHeroes();
     }
 }
