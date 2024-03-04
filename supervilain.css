@@ -27,6 +27,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     padding: 6px 14px;
     transition: .5s;
+    z-index: 99;
 }
 
 .sidebar.active {
@@ -41,11 +42,13 @@ body {
 }
 
 .sidebar .logo-menu .logo {
+    margin: 10px 10px;
     font-size: 25px;
     color: #fff;
     pointer-events: none;
     opacity: 0;
     transition: .2s;
+    width: 60px;
 }
 
 .sidebar.active .logo-menu .logo {
@@ -119,10 +122,6 @@ body {
 }
 
 
-
-
-
-
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -131,6 +130,9 @@ body {
     width: 1390px;
     margin-left: auto;
     padding: 20px;
+    z-index: -1;
+    transform: translateX(-1vw);
+    transition: .4s ease-out;
 }
 
 .container {
@@ -139,6 +141,7 @@ body {
     justify-content: center;
     flex-wrap: nowrap;
     margin: 10px 0;
+    margin-left: 28px;
 }
 
 .card {
@@ -149,7 +152,7 @@ body {
     cursor: pointer;
     overflow: hidden;
     border-radius: 2rem;
-    margin: 0 20px;
+    margin: 0 15px;
     display: flex;
     align-items: flex-end;
     transition: .4s cubic-bezier(.28,-0.03,0,.99);
@@ -160,17 +163,6 @@ body {
     color: white;
     display: flex;
     flex-wrap: nowrap;
-}
-
-.card > .row > .icon {
-    background: #223;
-    color: white;
-    border-radius: 50%;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 15px;
 }
 
 .card > .row > .description {
@@ -189,10 +181,21 @@ body {
 .description p {
     color: #b0b0ba;
     padding-top: 5px;
+    margin-left: 20px;
+    background: rgba(0, 0, 0, rgba(0, 0, 0, .2));
 }
 
 .description h4 {
     text-transform: uppercase;
+    margin-left: 20px;
+    background: rgba(0), 0, 0, rgba(0, 0, 0, .2);
+}
+
+.description {
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    margin: 5px;
+    border-radius: 10px 10px 10px 2rem;
 }
 
 input {
@@ -254,6 +257,23 @@ input:checked + label .vertical-text-black {
     opacity: 0; 
 }
 
+.left-blur {
+    margin-left: 90px;
+    position: absolute;
+    width: 130px;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(137, 137, 137), rgba(30, 30, 49, 0));
+    z-index: 5;
+}
+
+.right-blur {
+    margin-left: 1340px;
+    position: absolute;
+    width: 130px;
+    height: 100vh;
+    background: linear-gradient(to left, rgb(137, 137, 137), rgba(30, 30, 49, 0));
+    z-index: 5;
+}
 
 
 .card[for="c1"] {
@@ -271,12 +291,24 @@ input:checked + label .vertical-text-black {
 .card[for="c5"] {
     background-image: url('https://w.forfun.com/fetch/ef/ef6f516f32c68487c8e6e282a7ddeb9e.jpeg');
 }
-.card[for="c4"] {
-    background-image: url('https://www.bhmpics.com/downloads/killmonger-Wallpapers/15.killmonger-black-panther-wakanda-forever-6h.jpg');
+.card[for="c6"] {
+    background-image: url('https://images6.alphacoders.com/121/1219506.jpg');
 }
-.card[for="c4"] {
-    background-image: url('https://www.bhmpics.com/downloads/killmonger-Wallpapers/15.killmonger-black-panther-wakanda-forever-6h.jpg');
+.card[for="c7"] {
+    background-image: url('https://www.pixel4k.com/wp-content/uploads/2021/07/scarlet-witch-switched-back-4k_1627766374.jpg');
 }
-.card[for="c4"] {
-    background-image: url('https://www.bhmpics.com/downloads/killmonger-Wallpapers/15.killmonger-black-panther-wakanda-forever-6h.jpg');
+.card[for="c8"] {
+    background-image: url('https://wallpapers.com/images/featured/ultron-hqus6duha2yxj50k.jpg');
+}
+.card[for="c9"] {
+    background-image: url('https://images.hdqwalls.com/download/the-scarlet-witch-wanda-vision-4k-t4-2048x1152.jpg');
+}
+.card[for="c10"] {
+    background-image: url('https://www.itl.cat/pngfile/big/192-1927032_there-was-an-error-trying-to-play-this.jpg');
+}
+.card[for="c11"] {
+    background-image: url('https://images8.alphacoders.com/107/1079151.jpg');
+}
+.card[for="c12"] {
+    background-image: url('https://images3.alphacoders.com/825/825194.jpg');
 }
