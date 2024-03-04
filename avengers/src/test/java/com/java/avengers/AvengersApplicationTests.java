@@ -14,7 +14,7 @@ class AvengersApplicationTests {
 
 	@Test
 	public void testCreateSuperHero() {
-		SuperHeroEntity prod = new SuperHeroEntity(5L, "superafroune", "baiser", "francais", "ma bite" , 100F,"je t'encule", 0605151515,114);
+		SuperHeroEntity prod = new SuperHeroEntity(5L, "superman", "attaquer", "francais", "la ga" , 100F,"fort fort", 0605151515,114);
 	}
 
 }
