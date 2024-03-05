@@ -19,4 +19,6 @@ public class HeroController {
     public List<SuperHero> getAllSuperHeroes() {
         return superHeroService.getAllSuperHeroes();
     }
+
+
 }
