@@ -12,6 +12,7 @@ body {
     background: url('img.webp') no-repeat;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
 
 .sidebar {
@@ -170,8 +171,8 @@ body {
     justify-content: center;
     flex-direction: column;
     overflow: hidden;
-    height: 80px;
-    width: 520px;
+    height: 90px;
+    width: 590px;
     opacity: 0;
     transform: translateY(30px);
     transition-delay: .3s;
@@ -179,13 +180,16 @@ body {
 }
 
 .description p {
-    color: #b0b0ba;
+    color: #fff;
+    font-weight: 600;
     padding-top: 5px;
     margin-left: 20px;
+    margin-right: 30px;
     background: rgba(0, 0, 0, rgba(0, 0, 0, .2));
 }
 
 .description h4 {
+    font-weight: 900;
     text-transform: uppercase;
     margin-left: 20px;
     background: rgba(0), 0, 0, rgba(0, 0, 0, .2);
@@ -195,7 +199,7 @@ body {
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     margin: 5px;
-    border-radius: 10px 10px 10px 2rem;
+    border-radius: 10px 10px 2rem 2rem;
 }
 
 input {
@@ -255,24 +259,6 @@ input:checked + label .vertical-text {
 }
 input:checked + label .vertical-text-black {
     opacity: 0; 
-}
-
-.left-blur {
-    margin-left: 90px;
-    position: absolute;
-    width: 130px;
-    height: 100vh;
-    background: linear-gradient(to right, rgb(137, 137, 137), rgba(30, 30, 49, 0));
-    z-index: 5;
-}
-
-.right-blur {
-    margin-left: 1340px;
-    position: absolute;
-    width: 130px;
-    height: 100vh;
-    background: linear-gradient(to left, rgb(137, 137, 137), rgba(30, 30, 49, 0));
-    z-index: 5;
 }
 
 
