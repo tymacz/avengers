@@ -27,6 +27,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     padding: 6px 14px;
     transition: .5s;
+    z-index: 5;
 }
 
 .sidebar.active {
@@ -119,3 +120,16 @@ body {
     pointer-events: auto;
     transition-delay: calc(.1s * var(--i));
 }
+
+h1 {
+    text-align: center;
+    color: black;
+    margin-top: 300px;
+    font-weight: 900;
+    font-size: 70px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    z-index: -4;
+    border: 5px solid white;
+}
+
