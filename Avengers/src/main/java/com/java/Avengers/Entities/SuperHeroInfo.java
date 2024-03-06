@@ -1,19 +1,25 @@
 package com.java.Avengers.Entities;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.persistence.Column;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
 public class SuperHeroInfo {
-    private String nomHero;
-    private String identiteSecrete;
+       
+    private String nom_hero;
+    private String identite_secrete;
     private String pouvoir;
-    private String image;
     private String point_faible;
-    private String commentaire;
     private int score;
-    private String numero_tel;
+    private String commentaire;
+    private String image;
 
     // Constructor
-    public SuperHeroInfo(String nomHero, String identiteSecrete, String pouvoir, String image, String point_faible, String commentaire, int score) {
-        this.nomHero = nomHero;
-        this.identiteSecrete = identiteSecrete;
+    public SuperHeroInfo(String nom_hero, String identite_secrete, String pouvoir, String image, String point_faible, String commentaire, int score) {
+        this.nom_hero = nom_hero;
+        this.identite_secrete = identite_secrete;
         this.pouvoir = pouvoir;
         this.image = image;
         this.point_faible = point_faible;
@@ -24,19 +30,19 @@ public class SuperHeroInfo {
 
     // Getters and setters
     public String getNomHero() {
-        return nomHero;
+        return nom_hero;
     }
 
     public void setNomHero(String nomHero) {
-        this.nomHero = nomHero;
+        this.nom_hero = nomHero;
     }
 
     public String getIdentiteSecrete() {
-        return identiteSecrete;
+        return identite_secrete;
     }
 
     public void setIdentiteSecrete(String identiteSecrete) {
-        this.identiteSecrete = identiteSecrete;
+        this.identite_secrete = identiteSecrete;
     }
 
     public String getPouvoir() {
