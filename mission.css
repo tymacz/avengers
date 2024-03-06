@@ -192,6 +192,8 @@ body {
 }
 
 .content{
+    display: flex;
+    justify-content: space-between;
     width: 40vw;
     height: 40vh;
     background: transparent;
@@ -206,4 +208,62 @@ body {
     margin-left: 1vw;
     margin-top: 1vh;
     font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.content-left {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.content-right {
+    width: 49%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.right1 {
+    background: red;
+    height: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 50px;
+    border-radius: 20px;
+    background: url(https://c4.wallpaperflare.com/wallpaper/139/444/1000/cristiano-ronaldo-wallpaper-preview.jpg) no-repeat;
+    background-size: cover;
+    z-index: 10;
+}
+
+.right2 {
+    background: green;
+    height: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 50px;
+    border-radius: 20px;
+    background: url(https://c4.wallpaperflare.com/wallpaper/139/444/1000/cristiano-ronaldo-wallpaper-preview.jpg) no-repeat;
+    background-size: cover;
+    z-index: 5;
+}
+
+.right3 {
+    background: blue;
+    height: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 50px;
+    border-radius: 20px;
+    background: url(https://c4.wallpaperflare.com/wallpaper/139/444/1000/cristiano-ronaldo-wallpaper-preview.jpg) no-repeat;
+    background-size: cover;
+    z-index: 1;
 }
