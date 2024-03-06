@@ -12,6 +12,7 @@ body {
     background: url('img.webp') no-repeat;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
 
 .sidebar {
@@ -155,7 +156,6 @@ body {
   height: 80vh;
   transition: transform 1s, opacity 1s;
 }
-
 
 .carousel-options {
   display: flex;
