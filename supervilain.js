@@ -40,6 +40,8 @@ fetch("http://10.191.14.114:8080/super_vilain")
             description = document.getElementsByClassName("description")
             description[(user.id_vilain)-1].appendChild(p)
 
+            img = document.getElementsByClassName("card")[user.id_vilain-1]
+            img.style = `background-image : url(${user.image})`;
         });
     })
     .catch(error => console.error('Erreur lors de la récupération des données utilisateur:', error));
