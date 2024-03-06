@@ -4,15 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ec60ef8-c766-4ff4-bc8a-12b190d48845" name="Changes" comment="Merge remote-tracking branch 'origin/Clem' into Clem&#10;&#10;# Conflicts:&#10;#&#9;Avengers/.idea/workspace.xml&#10;#&#9;Avengers/src/main/java/com/java/Avengers/Entities/Address.java&#10;#&#9;Avengers/src/main/java/com/java/Avengers/Entities/SuperHero.java&#10;#&#9;Avengers/src/main/java/com/java/Avengers/Service/HeroService.java&#10;#&#9;Avengers/src/main/java/com/java/Avengers/Service/IEHeroService.java&#10;#&#9;Avengers/src/main/resources/application.properties">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Controllers/MissionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Entities/Mission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Entities/SuperHeroInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Service/MissionService.java" afterDir="false" />
+    <list default="true" id="9ec60ef8-c766-4ff4-bc8a-12b190d48845" name="Changes" comment="debut mission">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Entities/Civil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Entities/Litige.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Repository/MissionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Service/IMissionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dump2-avenger-202402141023.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dump2-avenger-202402141023.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Controllers/HeroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Controllers/HeroController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Service/HeroService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Service/HeroService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Controllers/MissionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Controllers/MissionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Entities/Mission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Entities/Mission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Entities/SuperHeroInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Entities/SuperHeroInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Models/HeroModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Service/MissionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Service/MissionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Service/VilainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Service/VilainService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,8 +97,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.java.Avengers.Controllers" />
       <recent name="com.java.Avengers.Entities" />
+      <recent name="com.java.Avengers.Controllers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\clema\JavaCode\Avenger\Avengers\src\main\resources" />
@@ -205,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709654397808</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="debut mission">
+      <option name="closed" value="true" />
+      <created>1709723442169</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1709723442169</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -226,6 +237,7 @@
     <MESSAGE value="récupération des vilains" />
     <MESSAGE value="récupération des héros" />
     <MESSAGE value="Merge remote-tracking branch 'origin/Clem' into Clem&#10;&#10;# Conflicts:&#10;#&#9;Avengers/.idea/workspace.xml&#10;#&#9;Avengers/src/main/java/com/java/Avengers/Entities/Address.java&#10;#&#9;Avengers/src/main/java/com/java/Avengers/Entities/SuperHero.java&#10;#&#9;Avengers/src/main/java/com/java/Avengers/Service/HeroService.java&#10;#&#9;Avengers/src/main/java/com/java/Avengers/Service/IEHeroService.java&#10;#&#9;Avengers/src/main/resources/application.properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/Clem' into Clem&#10;&#10;# Conflicts:&#10;#&#9;Avengers/.idea/workspace.xml&#10;#&#9;Avengers/src/main/java/com/java/Avengers/Entities/Address.java&#10;#&#9;Avengers/src/main/java/com/java/Avengers/Entities/SuperHero.java&#10;#&#9;Avengers/src/main/java/com/java/Avengers/Service/HeroService.java&#10;#&#9;Avengers/src/main/java/com/java/Avengers/Service/IEHeroService.java&#10;#&#9;Avengers/src/main/resources/application.properties" />
+    <MESSAGE value="debut mission" />
+    <option name="LAST_COMMIT_MESSAGE" value="debut mission" />
   </component>
 </project>
