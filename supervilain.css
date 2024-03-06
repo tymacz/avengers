@@ -186,6 +186,7 @@ body {
     margin-left: 20px;
     margin-right: 30px;
     background: rgba(0, 0, 0, rgba(0, 0, 0, .2));
+    font-size: 12px;
 }
 
 .description h4 {
@@ -229,26 +230,8 @@ input:checked + label .description {
     border-radius: 22px;
 }
 
-.vertical-text-black {
-    padding: 5px;
-    position: absolute;
-    left: 25px;
-    top: 50%;
-    transform: translate(0, -50%);
-    text-align: center; 
-    color: #000;
-    line-height: 20px;
-    font-size: 20px;
-    font-weight: 800;
-    border-radius: 22px;
-}
 
 .vertical-text span {
-    display: block; 
-    width: 20px; 
-    margin: auto; 
-}
-.vertical-text-black span {
     display: block; 
     width: 20px; 
     margin: auto; 
@@ -257,44 +240,4 @@ input:checked + label .description {
 input:checked + label .vertical-text {
     opacity: 0; 
 }
-input:checked + label .vertical-text-black {
-    opacity: 0; 
-}
 
-
-.card[for="c1"] {
-    background-image: url('https://wallpapers.com/images/hd/marvel-villain-thanos-qw0tzjg9vqkn0ju7.jpg');
-}
-.card[for="c2"] {
-    background-image: url('https://wallpapercosmos.com/w/full/6/2/e/14333-3840x2160-desktop-4k-loki-tv-series-wallpaper.jpg');
-}
-.card[for="c3"] {
-    background-image: url('https://imgsrc.cineserie.com/2021/02/spider-man-3-willem-dafoe-de-retour-en-bouffon-vert.png?ver=1');
-}
-.card[for="c4"] {
-    background-image: url('https://www.bhmpics.com/downloads/killmonger-Wallpapers/15.killmonger-black-panther-wakanda-forever-6h.jpg');
-}
-.card[for="c5"] {
-    background-image: url('https://w.forfun.com/fetch/ef/ef6f516f32c68487c8e6e282a7ddeb9e.jpeg');
-}
-.card[for="c6"] {
-    background-image: url('https://images6.alphacoders.com/121/1219506.jpg');
-}
-.card[for="c7"] {
-    background-image: url('https://www.pixel4k.com/wp-content/uploads/2021/07/scarlet-witch-switched-back-4k_1627766374.jpg');
-}
-.card[for="c8"] {
-    background-image: url('https://wallpapers.com/images/featured/ultron-hqus6duha2yxj50k.jpg');
-}
-.card[for="c9"] {
-    background-image: url('https://images.hdqwalls.com/download/the-scarlet-witch-wanda-vision-4k-t4-2048x1152.jpg');
-}
-.card[for="c10"] {
-    background-image: url('https://www.itl.cat/pngfile/big/192-1927032_there-was-an-error-trying-to-play-this.jpg');
-}
-.card[for="c11"] {
-    background-image: url('https://images8.alphacoders.com/107/1079151.jpg');
-}
-.card[for="c12"] {
-    background-image: url('https://images3.alphacoders.com/825/825194.jpg');
-}
