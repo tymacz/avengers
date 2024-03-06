@@ -156,6 +156,7 @@ body {
   height: 80vh;
   transition: transform 1s, opacity 1s;
 }
+
 .carousel-options {
   display: flex;
   flex-direction : row;
@@ -167,10 +168,12 @@ body {
 #card {
     padding: 2vw;
     width: fit-content;
-    height: fit-content;
+    height: 100%;
     background: rgba(0, 0, 0, 0.25);
-    margin-top: 5vh;
-    margin-left: 5vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 5vw;
+    padding-right: 5vw;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
