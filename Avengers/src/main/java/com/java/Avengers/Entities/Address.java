@@ -36,56 +36,46 @@ public class Address {
         this.id_adresse = id_adresse;
     }
 
-    public String getStreet() {
+    public String getNumero_rue() {
         return numero_rue;
     }
 
-    public void setStreet(String street) {
+    public void setNumero_rue(String NumeroRue) {
         this.numero_rue = numero_rue;
     }
 
-    public String getCity() {
+    public String getNom_rue() {
         return nom_rue;
     }
 
-    public void setCity(String city) {
+    public void setNom_rue(String NomRue) {
         this.nom_rue = nom_rue;
     }
 
-    public String getState() {
+    public String getCode_postal() {
         return code_postal;
     }
 
-    public void setState(String state) {
+    public void setCode_postal(String Code_postal) {
         this.code_postal = code_postal;
     }
 
-    public String getCountry() {
+    public String getVille() {
         return ville;
     }
 
-    public void setCountry(String country) {
+    public void setVille(String Ville) {
         this.ville = ville;
     }
 
-    public String getPostalCode() {
+    public String getPays() {
         return pays;
     }
 
-    public void setPostalCode(String postalCode) {
+    public void setPays(String Pays) {
         this.pays = pays;
     }
 
-    // Override toString() method for easy printing
-    @Override
-    public String toString() {
-        return "Address{" +
-                "id_adresse=" + id_adresse +
-                ", numero_rue='" + numero_rue + '\'' +
-                ", nom_rue='" + nom_rue + '\'' +
-                ", code_postal='" + code_postal + '\'' +
-                ", ville='" + ville + '\'' +
-                ", pays='" + pays + '\'' +
-                '}';
-    }
+
+
 }
