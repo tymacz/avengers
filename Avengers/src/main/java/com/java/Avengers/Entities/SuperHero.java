@@ -1,14 +1,17 @@
 package com.java.Avengers.Entities;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
-import org.yaml.snakeyaml.constructor.Constructor;
+
 
 @Entity
 @Table(name = "super_hero")
 public class SuperHero {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @JsonProperty("idHero")
     private int id_hero;
+    @JsonProperty("nomHero")
     private String nom_hero;
     private String identite_secrete;
     private String pouvoir;
@@ -16,6 +19,7 @@ public class SuperHero {
     private int score;
     private String commentaire;
     private String numero_tel;
+    private String image;
 
 
 
@@ -29,7 +33,7 @@ public class SuperHero {
 
 
     // Constructor with parameters
-    public SuperHero(String nom_hero, String identite_secrete, String pouvoir, String point_faible, int score, String commentaire, String numero_tel, Address address) {
+    public SuperHero(String nom_hero, String identite_secrete, String pouvoir, String point_faible, int score, String commentaire, String numero_tel, Address address, String image) {
         this.nom_hero = nom_hero;
         this.identite_secrete = identite_secrete;
         this.pouvoir = pouvoir;
@@ -38,6 +42,7 @@ public class SuperHero {
         this.commentaire = commentaire;
         this.numero_tel = numero_tel;
         this.address = address;
+        this.image = image;
     }
 
     // Getters and setters
@@ -112,4 +117,9 @@ public class SuperHero {
     public void setAddress(Address address) {
         this.address = address;
     }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+    public String getImage() {return image; }
 }
