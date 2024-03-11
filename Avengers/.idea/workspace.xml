@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ec60ef8-c766-4ff4-bc8a-12b190d48845" name="Changes" comment="récupération des héros" />
+    <list default="true" id="9ec60ef8-c766-4ff4-bc8a-12b190d48845" name="Changes" comment="mission avec civil plus litige">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +29,12 @@
   }
 }</component>
   <component name="GithubPullRequestsUISettings">
+    <option name="recentNewPullRequestHead">
+      <RepoCoordinatesHolder>
+        <option name="owner" value="tymacz" />
+        <option name="repository" value="avengers" />
+      </RepoCoordinatesHolder>
+    </option>
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
         <option name="accountId" value="e27911bd-781b-4cb7-b76f-224424e0141a" />
@@ -51,33 +59,39 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2cMcE0rG7zMGjJJHz0ujEM4bcBI" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AvengersApplication.executor": "Run",
-    "Maven.Avengers [clean,deploy].executor": "Run",
-    "Maven.Avengers [clean,verify].executor": "Run",
-    "Maven.avengers [clean,deploy].executor": "Run",
-    "Maven.avengers [clean,install].executor": "Run",
-    "Maven.avengers [clean,site].executor": "Run",
-    "Maven.avengers [clean].executor": "Run",
-    "Maven.demo-spring [clean,deploy].executor": "Run",
-    "Maven.demo-spring [clean].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Clem",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/clema/JavaCode/Avenger/Avengers",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AvengersApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Avengers [clean,deploy].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Avengers [clean,verify].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.avengers [clean,deploy].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.avengers [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.avengers [clean,site].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.avengers [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.demo-spring [clean,deploy].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.demo-spring [clean].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Clem&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/clema/JavaCode/Avenger/Avengers&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.java.Avengers.Controllers" />
       <recent name="com.java.Avengers.Entities" />
+      <recent name="com.java.Avengers.Controllers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\clema\JavaCode\Avenger\Avengers\src\main\resources" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -152,7 +166,55 @@
       <option name="project" value="LOCAL" />
       <updated>1709558735428</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="récupération des héros">
+      <option name="closed" value="true" />
+      <created>1709558839327</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1709558839327</updated>
+    </task>
+    <task id="LOCAL-00009" summary="récupération des héros">
+      <option name="closed" value="true" />
+      <created>1709654299752</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709654299753</updated>
+    </task>
+    <task id="LOCAL-00010" summary="récupération des héros">
+      <option name="closed" value="true" />
+      <created>1709654344582</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1709654344582</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Merge remote-tracking branch 'origin/Clem' into Clem&#10;&#10;# Conflicts:&#10;#&#9;Avengers/.idea/workspace.xml&#10;#&#9;Avengers/src/main/java/com/java/Avengers/Entities/Address.java&#10;#&#9;Avengers/src/main/java/com/java/Avengers/Entities/SuperHero.java&#10;#&#9;Avengers/src/main/java/com/java/Avengers/Service/HeroService.java&#10;#&#9;Avengers/src/main/java/com/java/Avengers/Service/IEHeroService.java&#10;#&#9;Avengers/src/main/resources/application.properties">
+      <option name="closed" value="true" />
+      <created>1709654397808</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1709654397808</updated>
+    </task>
+    <task id="LOCAL-00012" summary="debut mission">
+      <option name="closed" value="true" />
+      <created>1709723442169</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1709723442169</updated>
+    </task>
+    <task id="LOCAL-00013" summary="mission avec civil plus litige">
+      <option name="closed" value="true" />
+      <created>1709738474260</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1709738474260</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,7 +232,11 @@
     <MESSAGE value="Add files via upload" />
     <MESSAGE value="ok" />
     <MESSAGE value="api superhero" />
+    <MESSAGE value="récupération des vilains" />
     <MESSAGE value="récupération des héros" />
-    <option name="LAST_COMMIT_MESSAGE" value="récupération des héros" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/Clem' into Clem&#10;&#10;# Conflicts:&#10;#&#9;Avengers/.idea/workspace.xml&#10;#&#9;Avengers/src/main/java/com/java/Avengers/Entities/Address.java&#10;#&#9;Avengers/src/main/java/com/java/Avengers/Entities/SuperHero.java&#10;#&#9;Avengers/src/main/java/com/java/Avengers/Service/HeroService.java&#10;#&#9;Avengers/src/main/java/com/java/Avengers/Service/IEHeroService.java&#10;#&#9;Avengers/src/main/resources/application.properties" />
+    <MESSAGE value="debut mission" />
+    <MESSAGE value="mission avec civil plus litige" />
+    <option name="LAST_COMMIT_MESSAGE" value="mission avec civil plus litige" />
   </component>
 </project>
