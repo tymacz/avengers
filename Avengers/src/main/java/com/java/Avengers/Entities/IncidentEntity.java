@@ -13,4 +13,5 @@ public class IncidentEntity {
     private Integer id_incident;
 
     private String nature;
+    private String commentaire;    ////la modification faite
 }
