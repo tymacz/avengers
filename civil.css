@@ -12,6 +12,7 @@ body {
     background: url('img2.webp') no-repeat;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
 
 .sidebar {
@@ -119,4 +120,26 @@ body {
     opacity: 1;
     pointer-events: auto;
     transition-delay: calc(.1s * var(--i));
+}
+
+.profil {
+    height: 80vh;
+    width: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 20px;
+}
+
+.info-civil {
+    text-align: left;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    padding: 5vw;
 }
