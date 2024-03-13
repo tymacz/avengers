@@ -135,9 +135,10 @@ body {
 .scroll {
     position: relative;
     width: 10px;
-    height: 400px;
+    height: 600px;
     background: rgba(255, 255, 255, .3);
     border-radius: 50px;
+    margin-bottom: 100px;
 }
 
 .interieur {

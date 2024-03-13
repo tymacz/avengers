@@ -12,6 +12,7 @@ const sidebar = document. querySelector ('.sidebar');
 fetch("http://10.191.14.113:8080/super_vilain")
     .then(response => response.json())
     .then(data => {
+        index = 0
         data.forEach((user, index) => {
             console.log(user)
             const userName = user.nom_vilain;
@@ -20,10 +21,8 @@ fetch("http://10.191.14.113:8080/super_vilain")
             for (let index = 0; index < userName.length; index++) {
                 span = document.createElement("span")              
                 span.textContent =  userName[index].toUpperCase()
-                console.log(userNameDiv)
                 userNameDiv.appendChild(span)
             }
-            console.log(userNameDiv)
 
             h4 = document.createElement("h4")
             h4.textContent = user.nom_vilain
@@ -42,6 +41,7 @@ fetch("http://10.191.14.113:8080/super_vilain")
 
             img = document.getElementsByClassName("card")[user.id_vilain-1]
             img.style = `background-image : url(${user.image})`;
+
         });
     })
     .catch(error => console.error('Erreur lors de la récupération des données utilisateur:', error));
