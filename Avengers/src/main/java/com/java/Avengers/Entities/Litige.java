@@ -3,6 +3,8 @@ package com.java.Avengers.Entities;
 import jakarta.persistence.*;
 
 
+import java.util.List;
+
 
 
 @Entity
@@ -20,12 +22,18 @@ public class Litige {
     private int deces_citoyens;
     private String casse_biens;
 
+    @OneToMany(mappedBy = "litige", cascade = CascadeType.ALL)
+    private List<Piece> piece;
+
+
     // Constructeur par défaut
     public Litige() {
     }
 
     // Constructeur avec paramètres
-    public Litige(String objet, String type, String personnes_concernees, int cout, String degat_majeur, int deces_citoyens, String casse_biens) {
+
+    public Litige(String objet, String type, String personnes_concernees, int cout, String degat_majeur, int deces_citoyens, String casse_biens, List<Piece> piece) {
+
         this.objet = objet;
         this.type = type;
         this.personnes_concernees = personnes_concernees;
@@ -33,6 +41,9 @@ public class Litige {
         this.degat_majeur = degat_majeur;
         this.deces_citoyens = deces_citoyens;
         this.casse_biens = casse_biens;
+
+        this.piece = piece;
+
     }
 
     // Getters and setters
@@ -99,4 +110,14 @@ public class Litige {
     public void setCasse_biens(String casse_biens) {
         this.casse_biens = casse_biens;
     }
+
+    public List<Piece> getPieces() {
+        return piece;
+    }
+
+    public void setPieces(List<Piece> piece) {
+        this.piece = piece;
+    }
+
+
 }
