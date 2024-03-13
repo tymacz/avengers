@@ -30,7 +30,9 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
+
         <entry key="$PROJECT_DIR$/.." value="develop" />
+
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -96,8 +98,9 @@
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/clema/JavaCode/Avenger/Avengers",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.java.Avengers.Entities" />
