@@ -9,7 +9,7 @@ const sidebar = document. querySelector ('.sidebar');
 
 
 
-fetch("http://10.191.14.114:8080/super_vilain")
+fetch("http://10.191.14.113:8080/super_vilain")
     .then(response => response.json())
     .then(data => {
         index = 0
