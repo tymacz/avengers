@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ec60ef8-c766-4ff4-bc8a-12b190d48845" name="Changes" comment="mission avec civil plus litige">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Controllers/LitigeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Entities/Piece.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Repository/LitigeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Service/ILitigeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Service/LitigeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Controllers/MissionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Controllers/MissionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Entities/Litige.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Entities/Litige.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Entities/OrganisationEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/java/Avengers/Entities/OrganisationEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,21 +23,14 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-
-        <entry key="$PROJECT_DIR$/.." value="develop" />
-
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;clement14A&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "clement14A"
   }
-}</component>
+}]]></component>
   <component name="GithubPullRequestsUISettings">
     <option name="recentNewPullRequestHead">
       <RepoCoordinatesHolder>
@@ -71,8 +59,8 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 3
-}</component>
+    &quot;associatedIndex&quot;: 3
+    }</component>
   <component name="ProjectId" id="2cMcE0rG7zMGjJJHz0ujEM4bcBI" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -94,13 +82,12 @@
     "Maven.demo-spring [clean].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "route-piecesur-litige",
+    "git-widget-placeholder": "develop",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/clema/JavaCode/Avenger/Avengers",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
-
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.java.Avengers.Entities" />

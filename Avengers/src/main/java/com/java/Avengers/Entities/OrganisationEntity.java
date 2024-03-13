@@ -23,8 +23,11 @@ private Integer id_organisation;
     private int nb_mission;
     private String dirigeant;
     private String membre;
-    private int id_adresse;
     private  String numero_tel;
+    @ManyToOne
+    @JoinColumn(name = "id_adresse")
+    private Address address;
+
 
 
 }
