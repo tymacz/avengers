@@ -20,17 +20,17 @@ public class CivilControllerPost {
     @PostMapping
 
     public CivilEntityPost addCivil(
-            @RequestParam String nom_civil,
-            @RequestParam String prenom_civil,
-            @RequestParam String genre,
-            @RequestParam Date date_naissance,
-            @RequestParam String nationalite,
-            @RequestParam String organisation,
-            @RequestParam String commentaire,
-            @RequestParam Integer nb_incident,
-            @RequestParam Integer nb_mission,
-            @RequestParam Integer id_adresse,
-            @RequestParam String numero_tel
+            @RequestParam(required = false) String nom_civil,
+            @RequestParam(required = false) String prenom_civil,
+            @RequestParam(required = false) String genre,
+            @RequestParam(required = false) Date date_naissance,
+            @RequestParam(required = false) String nationalite,
+            @RequestParam(required = false) String organisation,
+            @RequestParam(required = false) String commentaire,
+            @RequestParam(required = false) Integer nb_incident,
+            @RequestParam(required = false) Integer nb_mission,
+            @RequestParam(required = false) Integer id_adresse,
+            @RequestParam(required = false) String numero_tel
     ) {
         CivilEntityPost newCivil = new CivilEntityPost();
         newCivil.setNom_civil(nom_civil);

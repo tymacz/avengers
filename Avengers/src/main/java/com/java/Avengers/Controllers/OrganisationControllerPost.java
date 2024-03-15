@@ -16,7 +16,7 @@ public class OrganisationControllerPost {
     private OrganisationServicePost organisationServicePost;
 
     @PostMapping
-    public OrganisationEntityPost addOrganisation(@RequestParam String nom) {
+    public OrganisationEntityPost addOrganisation(@RequestParam(required = false) String nom) {
         OrganisationEntityPost newOrganisation = new OrganisationEntityPost();
         newOrganisation.setNom(nom);
         return organisationServicePost.addOrganisation(newOrganisation);
