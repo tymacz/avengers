@@ -18,7 +18,7 @@ public class AdresseControllerPost {
     private AdresseServicePost adresseServicePost;
 
     @PostMapping
-    public AdresseEntityPost addAdresse(@RequestParam String numero_rue, @RequestParam String nom_rue,@RequestParam  String code_postal,@RequestParam String ville ,@RequestParam String pays)
+    public AdresseEntityPost addAdresse(@RequestParam(required = false) String numero_rue, @RequestParam(required = false) String nom_rue,@RequestParam(required = false)  String code_postal,@RequestParam(required = false) String ville ,@RequestParam(required = false) String pays)
     {
         AdresseEntityPost newAdresse = new AdresseEntityPost();
         newAdresse.setNumero_rue(numero_rue);

@@ -16,7 +16,7 @@ public class IncidentController {
 
 
     @PostMapping
-    public IncidentEntity addIncident(@RequestParam String nature,@RequestParam String commentaire) // Ajout du paramètre commentaire
+    public IncidentEntity addIncident(@RequestParam(required = false) String nature,@RequestParam(required = false) String commentaire) // Ajout du paramètre commentaire
     {
         IncidentEntity newIncident = new IncidentEntity();
         newIncident.setNature(nature);
